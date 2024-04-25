@@ -1,5 +1,5 @@
 # doc-template
-![workflow](https://github.com/serna37/doc-template/actions/workflows/Template-CI.yml/badge.svg?branch=develop)
+![workflow](https://github.com/serna37/bookmarklet-util-js/actions/workflows/Template-CI.yml/badge.svg?branch=develop)
 <!-- Description -->
 This repository is `Some Func` some description.
 
