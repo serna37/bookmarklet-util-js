@@ -191,7 +191,7 @@ sequenceDiagram
 # API IF
 |status|method|endpoint|feature|remarks|
 |--|--|--|--|--|
-|<ul><li>[x] </ul>|`GET`|`/msg`|メッセージ表示関数を返す|ヘッダ認証|
+|<ul><li>[x] </ul>|`GET`|`/msg`|メッセージ表示関数を返す||
 
 # Commands
 ```javascript
@@ -214,5 +214,20 @@ window.someObject.func1("some"); // このように呼べます
 
 ## サンプル
 ```javascript
-// TODO
+javascript: (async () => {
+    /** ページ取得後、javascript文字列を取得 */
+    const res = await fetch("https://serna37.github.io/bookmarklet-util-js/")
+        .then(v => v.text())
+        .catch(e => console.error(e));
+    console.log(res);
+    /** evalで実行し、windowオブジェクトに関数が登録される */
+    eval(res);
+})();
+```
+
+```javascript
+// 実行する
+window.utilfunc._showMsg("hello!");
+window.utilfunc._showMsg("warn!", "warn");
+window.utilfunc._showMsg("error!", "error");
 ```
