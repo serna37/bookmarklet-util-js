@@ -1,4 +1,3 @@
-<div id="js">
 window.utilfunc = {};
 window.utilfunc._showMsg = async (msg, level = "info") => {
     const $ = v => document.querySelector(v);
@@ -101,4 +100,3 @@ window.utilfunc._showMsg = async (msg, level = "info") => {
     await sleep(1000).then(_ => wrap.style.animation = "anime-fadeout-up 0.3s ease-out");
     await sleep(300).then(_ => [st, link, wrap].forEach(v => v.remove()));
 };
-</div>
